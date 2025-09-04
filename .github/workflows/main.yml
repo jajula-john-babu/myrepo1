@@ -49,7 +49,7 @@ jobs:
         run: |
           echo "display artifacts"
           ls -ltr ./artifacts
-          cp -f ./artifacts/webapp.war  /home/ubuntu/tomcat/tomcat
+          cp -f ./artifacts/webapp.war  /home/ubuntu/tomcat/tomcat/webapps
           nohup /home/ubuntu/tomcat/tomcat/bin/startup.sh &
           echo "completed"
 
